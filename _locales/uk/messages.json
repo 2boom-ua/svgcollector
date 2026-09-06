@@ -1,0 +1,46 @@
+{
+  "extName": {
+    "message": "SVG Collector",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Збирайте та експортуйте всі SVG-елементи з будь-якої веб-сторінки",
+    "description": "Extension description"
+  },
+  "extActionTitle": {
+    "message": "Відкрити SVG Collector",
+    "description": "Tooltip for toolbar icon"
+  },
+  "refresh": {
+    "message": "Оновити",
+    "description": "Tooltip for refresh button"
+  },
+  "copySvg": {
+    "message": "Копіювати SVG",
+    "description": "Tooltip for copy button"
+  },
+  "downloadSvg": {
+    "message": "Завантажити SVG",
+    "description": "Tooltip for download button"
+  },
+  "copied": {
+    "message": "Скопійовано ✓",
+    "description": "Toast message when SVG code is copied"
+  },
+  "copyFailed": {
+    "message": "Не вдалося скопіювати",
+    "description": "Toast message when copy fails"
+  },
+  "saving": {
+    "message": "Збереження...",
+    "description": "Toast message when saving starts"
+  },
+  "saved": {
+    "message": "Збережено ✓",
+    "description": "Toast message when SVG is saved"
+  },
+  "saveFailed": {
+    "message": "Не вдалося зберегти",
+    "description": "Toast message when save fails"
+  }
+}

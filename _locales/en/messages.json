@@ -1,0 +1,46 @@
+{
+  "extName": {
+    "message": "SVG Collector",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Collect and export all SVG elements from any web page",
+    "description": "Extension description"
+  },
+  "extActionTitle": {
+    "message": "Open SVG Collector",
+    "description": "Tooltip for toolbar icon"
+  },
+  "refresh": {
+    "message": "Refresh",
+    "description": "Tooltip for refresh button"
+  },
+  "copySvg": {
+    "message": "Copy SVG",
+    "description": "Tooltip for copy button"
+  },
+  "downloadSvg": {
+    "message": "Download SVG",
+    "description": "Tooltip for download button"
+  },
+  "copied": {
+    "message": "Copied ✓",
+    "description": "Toast message when SVG code is copied"
+  },
+  "copyFailed": {
+    "message": "Failed to copy",
+    "description": "Toast message when copy fails"
+  },
+  "saving": {
+    "message": "Saving...",
+    "description": "Toast message when saving starts"
+  },
+  "saved": {
+    "message": "Saved ✓",
+    "description": "Toast message when SVG is saved"
+  },
+  "saveFailed": {
+    "message": "Failed to save",
+    "description": "Toast message when save fails"
+  }
+}

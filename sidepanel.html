@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Collector</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div id="app">
+    <div id="stats">
+      <span id="countLabel">Found: <span id="countValue">0</span></span>
+      <button id="refreshBtn">
+        <img src="/icons/reload.svg" width="18" height="18">
+      </button>
+    </div>
+    <div id="listContainer">
+      <div id="loadingIndicator">Scanning...</div>
+      <div id="emptyState">No SVG found on this page</div>
+      <div id="errorState">Extension not available on this page</div>
+      <div id="svgList"></div>
+    </div>
+    <div class="footer">
+      <span><strong>SVG</strong> Collector, &copy; 2boom, 2026. <span class="version"></span></span>
+    </div>
+  </div>
+  <div id="tooltip" class="svg-tooltip"></div>
+
+  <!-- Modal -->
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modalCloseBtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div id="modalContent">
+        <div class="modal-preview-wrap">
+          <img id="modalPreview" src="" alt="SVG preview">
+        </div>
+        <div class="modal-header-row">
+          <span class="modal-type" id="modalType">Inline SVG</span>
+          <div class="modal-actions">
+            <button class="modal-btn-copy" id="modalCopyBtn">
+              <img src="/icons/copy.svg" width="18" height="18">
+            </button>
+            <button class="modal-btn-save" id="modalSaveBtn">
+              <img src="/icons/download.svg" width="18" height="18">
+            </button>
+          </div>
+        </div>
+        <div class="modal-dimensions" id="modalDimensions">24×24 · 1.2KB</div>
+        <div class="modal-id" id="modalId">svg-1234567890-abc123</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

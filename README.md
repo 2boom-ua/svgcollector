@@ -8,8 +8,6 @@
 
 **SVG Collector** is a Chrome / Edge browser extension designed to discover, preview, inspect, and export SVG vectors directly from any web page.
 
----
-
 ## Features
 
 - **Comprehensive Detection**: Scans and collects SVGs across multiple HTML and CSS sources:
@@ -24,12 +22,9 @@
 - **One-Click Export**: Quickly copy raw SVG code to clipboard or download files directly.
 - **Dark & Light Mode Support**: Fully reactive user interface adapting seamlessly to browser theme preferences.
 
----
-
 ## Extension Structure
 
 ```text
-.
 ├── background.js     # Background Service Worker (manages sidePanel & messaging)
 ├── content.js        # Content script for DOM scanning and SVG parsing
 ├── sidepanel.html    # Main UI markup for the Side Panel
@@ -52,12 +47,12 @@ Comming soon
 5. Click the extension icon in the toolbar to open the side panel.
 
 ## Permissions
-sidePanel: Used to display the SVG Inspector UI in the browser side panel.
-activeTab & scripting: Required to scan the active page's DOM for SVG assets.
-downloads: Enables direct downloading of SVG files.
-clipboardWrite: Allows copying raw SVG markup directly to your clipboard.
-storage: Preserves user preferences and session states.
-<all_urls> host permission: Needed to fetch externally referenced SVG assets cross-origin.
+- sidePanel: Used to display the SVG Inspector UI in the browser side panel.
+- activeTab & scripting: Required to scan the active page's DOM for SVG assets.
+- downloads: Enables direct downloading of SVG files.
+- clipboardWrite: Allows copying raw SVG markup directly to your clipboard.
+- storage: Preserves user preferences and session states.
+- <all_urls> host permission: Needed to fetch externally referenced SVG assets cross-origin.
 
 ## License
 
